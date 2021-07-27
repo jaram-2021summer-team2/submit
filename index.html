@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaram</title>
-    <link rel="stylesheet" href="css/welcome.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jaram</title>
 
-<body>
-    <div class="header">
-        <span class="logo"><img src="img/Jaram_icon_256.png"></span>
-        <span class="nav">
-            <a href="#content-1">메인</a>
-            <a href="#content-2">메인</a>
-            <a href="#content-3">메인</a>
-            <a href="#content-4">메인</a>
-        </span>
-    </div>
-    <div class="content_container"></div>
-        <div id="content-1" class="content-1">
-            
-        </div>
-        <div id="content-2"class="content content-2">
-            
-        </div>
-        <div id="content-3"class="content content-3">
-            
-        </div>
-        <div id="content-4"class="content-4">
-            
+        <link rel="stylesheet" href="./css/welcome.css">
+        <link rel="stylesheet" type="text/css" href="./fullPage/jquery.fullPage.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./fullPage/scrolloverflow.js"></script>
+        <script type="text/javascript" src="./fullPage/jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                    sectionsColor: ['#C63D0F', 'brown', 'cyan', 'darkorange', 'white'],
+                    css3: true
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+
+        <div id="header">
+            <img class="logo" src="./img/Jaram_icon_256.png">
+            <ul class="nav">
+                <li><a href="#page1">메인</a></li>
+                <li><a href="#page2">메인</a></li>
+                <li><a href="#page3">메인</a></li>
+                <li><a href="#page4">메인</a></li>
+                <li><a href="#page5">메인</a></li>
+            </ul>
         </div>
 
-        <div id="content-5"class="footer">
-            
+        <div id="fullpage" class="content">
+            <div class="section" id="section1"></div>
+            <div class="section" id="section2"></div>
+            <div class="section" id="section3"></div>
+            <div class="section" id="section4"></div>
+            <div class="section" id="section5"></div>
         </div>
-    </div>
-
-</body>
+    </body>
 </html>
