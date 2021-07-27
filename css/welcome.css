@@ -2,10 +2,13 @@ html {
 	scroll-behavior: smooth;
 }
 
+
 h1 {
     margin: 0;
     padding: 0;
     text-align: center;
+body {
+    margin : 0;
 }
 
 #header {
@@ -183,3 +186,4 @@ h1 {
     object-fit: fill;
     overflow: hidden;
 }
+
