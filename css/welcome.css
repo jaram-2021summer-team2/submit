@@ -1,0 +1,128 @@
+body {
+    margin : 0;
+    padding : 0;
+}
+
+/* desktop screen */
+@media only screen and (min-width : 1024px ) {
+    .header {
+        width: calc(100vw - (100vw - 100%));
+        height : 10vh;
+        background-color: aqua;
+    }
+    
+    .content {
+        width: calc(100vw - (100vw - 100%));
+        height : 100vh;
+    }
+    
+    .content-1 {
+        width: calc(100vw - (100vw - 100%));
+        height : 90vh;
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .content-2 {
+        background-color: brown;
+    }
+    
+    .content-3 {
+        background-color: cyan;
+    }
+    
+    .content-4 {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+        background-color: darkorange;
+    }
+    
+    .footer {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+    }
+}
+
+/* tablet screen */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .header {
+        width: calc(100vw - (100vw - 100%));
+        height : 10vh;
+        background-color: blue;
+    }
+    
+    .content {
+        width: calc(100vw - (100vw - 100%));
+        height : 100vh;
+    }
+    
+    .content-1 {
+        width: calc(100vw - (100vw - 100%));
+        height : 90vh;
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .content-2 {
+        background-color: black;
+    }
+    
+    .content-3 {
+        background-color: pink;
+    }
+    
+    .content-4 {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+        background-color: salmon;
+    }
+    
+    .footer {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+    }
+}
+
+/* mobile screen */
+@media only screen and (max-device-width : 768px) {
+    .header {
+        width: calc(100vw - (100vw - 100%));
+        height : 10vh;
+        background-color: red;
+    }
+    
+    .content {
+        width: calc(100vw - (100vw - 100%));
+        height : 100vh;
+    }
+    
+    .content-1 {
+        width: calc(100vw - (100vw - 100%));
+        height : 90vh;
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .content-2 {
+        background-color: purple;
+    }
+    
+    .content-3 {
+        background-color: peru;
+    }
+    
+    .content-4 {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+        background-color: darkviolet;
+    }
+    
+    .footer {
+        width: calc(100vw - (100vw - 100%));
+        height : 50vh;
+    }
+}
+
