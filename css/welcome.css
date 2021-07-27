@@ -2,6 +2,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 #header {
     display:flex;
     align-items : start;
@@ -47,11 +53,133 @@ html {
 }
 .nav li a:hover { color:#DE0212; } 
 
-.content div:first-child {
+#section1 div:first-child {
     /* width: calc(100vw - (100vw - 100%));
     height : 100vh; */
     background-image: url("https://jaram.net/img/background.jpg");
     filter: brightness(50%);
     background-size: cover;
     background-position: center;
+}
+
+.white-word {
+    color : white;
+}
+
+#section2 {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2--title {
+    width : 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.section2--article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section3 {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3--title {
+    height : 30%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3--article {
+    height : 70%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.section3--img {
+    width : 100%;
+    height : 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.--img {
+    width : 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: 0.5s;
+}
+
+.--img:hover {
+    width : 100%;
+    height : 100%;
+    transform: scale(1.2);
+    filter: brightness(50%);
+}
+
+.--caption {
+    opacity: 0;
+    position: absolute;
+    width : 90%;
+    top: 90%;
+	left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+
+.section4--container {
+    display: flex;
+    width: 100%;
+    height : 100%;
+    align-items: center;
+}
+
+.section4--article {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4-titlebox {
+    margin-bottom : 30px;
+}
+
+.section4-article {
+    width : 90%;
+}
+
+.section4--imgs {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.s4img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.--imgs4 {
+    width : 80%;
+    height: 80%;
+    object-fit: fill;
+    overflow: hidden;
 }

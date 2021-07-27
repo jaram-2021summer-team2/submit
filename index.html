@@ -8,6 +8,9 @@
 
         <link rel="stylesheet" href="./css/welcome.css">
         <link rel="stylesheet" type="text/css" href="./fullPage/jquery.fullPage.css">
+        <link rel="shortcut icon" href="img/Jaram_icon_256.png" type="image/x-icon">
+        <link rel="icon" href="img/Jaram_icon_256.png" type="image/x-icon">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -17,7 +20,7 @@
             $(document).ready(function() {
                 $('#fullpage').fullpage({
                     anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-                    sectionsColor: ['#C63D0F', 'brown', 'cyan', 'darkorange', 'white'],
+                    sectionsColor: ['#C63D0F', '#111111', '#111111', '#111111', '#111111'],
                     css3: true
                 });
             });
@@ -25,24 +28,100 @@
     </head>
     
     <body>
-
         <div id="header">
             <img class="logo" src="./img/Jaram_icon_256.png">
             <ul class="nav">
                 <li><a href="#page1">메인</a></li>
-                <li><a href="#page2">메인</a></li>
-                <li><a href="#page3">메인</a></li>
-                <li><a href="#page4">메인</a></li>
-                <li><a href="#page5">메인</a></li>
+                <li><a href="#page2">학회소개</a></li>
+                <li><a href="#page3">주요활동</a></li>
+                <li><a href="#page4">연간행사</a></li>
+                <li><a href="#page5">Contact</a></li>
             </ul>
         </div>
 
         <div id="fullpage" class="content">
             <div class="section" id="section1"></div>
-            <div class="section" id="section2"></div>
-            <div class="section" id="section3"></div>
-            <div class="section" id="section4"></div>
-            <div class="section" id="section5"></div>
+            <div class="section" id="section2">
+                <div class="section2--title">
+                    <h1 class="white-word">Jaram, the program development academy</h1>
+                </div>
+                <div class="section2--article">
+                    <h2 class="white-word">Since 1984</h2>
+                    <h3 class="white-word">대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.</h3>
+                    <h3 class="white-word">우리는 다양한 프로그래밍 분야를 경험한 사람이, 다양한 프로그램 개발 경험을 쌓도록 도와줍니다.</h3>
+                    <h3 class="white-word">우리는 매학기 개최하는 스터디와 워크샵으로 한가지 주제에 대해 함께 공부합니다.</h3>
+                    <h3 class="white-word">우리는 깊이 공부하며 프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.</h3>
+                    <h3 class="white-word">한양대학교 ERICA 소프트웨어융합대학 전공학회 자람JARAM</h3>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="section3--title">
+                    <h1 class="white-word">Main Activity</h1>
+                </div>
+                <div class="section3--article">
+                    <div class="section3--img">
+                        <img class="--img" src="img/test_image/IMG_1439.jpg" />
+                        <div class="--caption white-word">
+                            그룹 스터디<br/>
+                            자람에서는 한 학기당 한번씩 관심있는 주제로 같은 주제의 사람들과 그룹 스터디를 실시합니다.
+                        </div>
+                    </div>
+                    <div class="section3--img">
+                        <img class="--img" src="img/test_image/IMG_17.jpg" />
+                        <div class="--caption white-word">
+                            2019년 자람 동계 워크샵<br/>
+                            자람에서는 매년 여름방학 및 겨울방학마다 3일간 동아리 워크샵을 실시합니다.
+                        </div>
+                    </div>
+                    <div class="section3--img">
+                        <img class="--img" src="img/test_image/image26.jpeg" />
+                        <div class="--caption white-word">
+                            정기 세미나<br/>
+                            자람에서는 1년에 한번씩 개인이 직접 세미나를 진행하여 연구분야를 발표합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="section4--container">
+                    <div class="section4--article">
+                        <div class="section4-titlebox">
+                            <h1 class="section4-title">연간 행사</h1>
+                            <h2 class="section4-subtitle">자람은 관계를 중요시하는 학회입니다.</h2>
+                        </div>
+                        <div class="section4-contentbox">
+                            <div class="section4--imgs">
+                                <div class="s4img">
+                                    <img class="--imgs4" src="img/test_image/image30.jpg" />
+                                    <h3 class="--img-title">신년회</h3>  
+                                    <h4>매년 1학기 개강 전에 신년회에서 선배님들과 만날 수 있습니다.</h4>      
+                                </div>
+                                <div class="s4img">
+                                    <img class="--imgs4" src="img/test_image/image3.jpeg" />
+                                    <h3 class="--img-title">체육대회</h3> 
+                                    <h4>여름 또는 가을에 체육대회로 학회 내 단합력을 키웁니다.</h4>       
+                                </div>
+                                <div class="s4img">
+                                    <img class="--imgs4" src="img/test_image/image27.jpeg" />
+                                    <h3 class="--img-title">MT</h3>        
+                                    <h4>연중 2회 진행하는 엠티에서 학회원들끼리 친분을 다집니다.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section5">
+                <div class="section5-title">
+                    <h1 class="white-word">Contact Us</h1>
+                </div>
+                <div class="section5-article">
+
+                </div>
+            </div>
         </div>
+        <script type="text/javascript" src="./js/page3.js"></script>
+
+
     </body>
 </html>
