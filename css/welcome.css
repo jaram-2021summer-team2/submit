@@ -10,6 +10,8 @@ h1 {
 }
 body {
     margin : 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #header {
@@ -57,27 +59,33 @@ body {
 }
 .nav li a:hover { color:#DE0212; } 
 
-#section1 div:first-child {
-    filter: brightness(50%);
-}
-
 .slide {
     height: 100vh;
     padding: 6% 0 0 0;
     background-repeat : no-repeat;
     background-size : cover;
+    filter: brightness(20%);
 }
 
-#main {
-    display:flex;
+#maintitle {
     position: absolute;
-    top: 50vw;
-    color: white;
-    align-items : start;
-    width: 50vw;
-    height : 50vh;
+    top: 35vh;
+    left: 15vw;
     z-index:9;
-    text-align:center;
+
+    color: white;
+    font-size: 120px;
+}
+
+#subtitle {
+    position: absolute;
+    top: 51vh;
+    left: 15.5vw;
+    z-index:9;
+
+    font-weight: 200;
+    color: white;
+    font-size: 40px;
 }
 
 #slide1 {background-image: url(../img/test_image/IMG_1439.jpg);}
