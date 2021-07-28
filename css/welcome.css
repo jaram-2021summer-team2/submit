@@ -188,3 +188,16 @@ body {
     overflow: hidden;
 }
 
+.section5-title {
+    margin-bottom : 30px;
+}
+
+.section5-article {
+    width : 100%;
+
+}
+
+.map-container {
+    display:flex;
+    justify-content: space-around;
+}
