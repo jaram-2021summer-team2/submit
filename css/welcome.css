@@ -214,3 +214,29 @@ body {
     overflow: hidden;
 }
 
+.section5-title {
+    position: relative;
+    top: -15vh;
+}
+
+.section5-article {
+    display: grid;
+    position: relative;
+    place-items: center;
+    top: -5vh;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    gap: 20px;
+}
+
+.section5-article h4 {
+    position: relative;
+    top: -1vh;
+}
+
+.section5-image {
+    width : 30vh;
+    height: 30vh;
+    object-fit: fill;
+    overflow: hidden;
+}
